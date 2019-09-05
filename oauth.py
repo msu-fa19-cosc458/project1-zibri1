@@ -1,6 +1,6 @@
 import requests_oauthlib, requests
 
-url = \ "https://api.twitter.com/1.1/account/verify_credentials.json"
+url = "https://api.twitter.com/1.1/account/verify_credentials.json"
 
 oauth = requests_oauthlib.OAuth1(
     "<API_KEY>", 
