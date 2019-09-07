@@ -42,12 +42,12 @@ def index():
     ac = genius_json_body["response"]["hits"][r]["result"]["song_art_image_url"]
     ap = genius_json_body["response"]["hits"][r]["result"]["primary_artist"]["image_url"]
     tweet01 = twitter_json_body["statuses"][z]["text"]
-    #tweet02 = twitter_json_body["statuses"][q]["text"]
+    tweet02 = twitter_json_body["statuses"][q]["text"]
     tweet03 = twitter_json_body["statuses"][v]["text"]
 
     
     return flask.render_template("index.html", 
-    song = json_song, album_cover = ac, artist_pic = ap, tweet1 = tweet01, tweet3 = tweet03)
+    song = json_song, album_cover = ac, artist_pic = ap, tweet1 = tweet01, tweet2 = tweet02, tweet3 = tweet03)
     
 
 app.run(
